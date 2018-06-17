@@ -1,0 +1,28 @@
+import java.util.HashMap;
+import java.util.Map;
+ 
+public class Word {
+    public static void main(String[] args) {
+       Word Word = new Word();
+        Word.countWords("Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.");
+    }
+ 
+    public void countWords(String input) {
+        Map <String, String> map = new HashMap <String, String> ();
+ 
+        if (input != null) {
+            String[] separatedWords = input.split(" ");
+            for (String str: separatedWords) {
+                if (map.containsKey(str)) {
+                    int count = Integer.parseInt(map.get(str));
+                    map.put(str, String.valueOf(count + 1));
+                } else {
+                    map.put(str, "1");
+                }
+            }
+        }
+ 
+        System.out.println("Count :- " + map);
+    }
+ 
+}
