@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.util.*;
+ 
+public class pali{
+	
+    public static void main (String args[]){
+    	
+            Scanner input = new Scanner (System.in);
+            System.out.println("Type a word: ");
+                String s1 = input.nextLine();
+                String s2 = reverseIt(s1);
+                System.out.println();
+                
+            if ( s1.equals(s2) ){
+                    System.out.println("This is a Palindrome");
+            }
+            else
+                System.out.println("This is not a Palindrome");
+    }
+    
+    public static String reverseIt(String a) {
+ 
+        int length = a.length();
+        StringBuilder reverse = new StringBuilder();
+ 
+        for(int i = length; i > 0; --i) {
+            char result = a.charAt(i-1);
+            reverse.append(result);
+        }
+            return reverse.toString();
+}
+}
