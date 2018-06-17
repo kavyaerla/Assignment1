@@ -1,0 +1,25 @@
+import java.util.*;
+class Decimal
+{
+  public static void main(String[] args) 
+  { 
+    Scanner in = new Scanner(System.in);
+    Stack<Float> stack = new Stack<Float>();
+    System.out.println("Enter decimal number: ");
+    float num = in.nextFloat();
+ 
+    while (num != 0)
+    {
+      float d = num % 2;
+      stack.push(d);
+      num /= 2;
+    } 
+ 
+    System.out.print("\nBinary representation is:");
+    while (!(stack.isEmpty() ))
+    {
+      System.out.print(stack.pop());
+    }
+    System.out.println();
+  }
+}
