@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class diff
+{
+    public static void main (String [] args)
+    {       
+        double sum = 0;
+        int count = 0;
+        double largest = 0;
+        double smallest = 0;
+        double range = 0;
+         
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter values:");
+        while (in.hasNextDouble())
+        {
+            double value = in.nextDouble();
+            {
+                sum = sum + value;
+                count++;
+                double average = sum/count;
+                if (value > largest);
+                {
+                    largest = value;
+                }
+                if (value < smallest);
+                {
+                    smallest = value;
+                    range = largest - smallest;
+                }
+            System.out.println("The average is: " + average);
+            System.out.println("The largest is: " + largest);
+            System.out.println("The smallest is: " + smallest);
+            System.out.println("The range is: " + range);
+        }
+         
+    }
+    }
+}
