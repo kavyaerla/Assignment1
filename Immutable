@@ -1,0 +1,20 @@
+
+public final class Testimmutable{
+	
+	private String name;
+	
+	Testimmutable(String name){
+		this.name = name;
+		
+	}
+	public String getName() {
+		return name;
+		
+	}
+	public static void main(String args[]) {
+		Testimmutable ti = new Testimmutable("kavya");
+		System.out.println(ti.getName());
+		
+		
+	}
+}
