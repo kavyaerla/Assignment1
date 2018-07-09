@@ -1,0 +1,17 @@
+package com.outputstream;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class outputstream {
+	public static void main(String args[])  {
+		try {
+		FileReader fr = new FileReader("C:\\Users\\kavya\\Desktop\\VISAM\\filein.txt");
+		.filter(s -> s.length() >= 35)
+		{
+			System.out.println(Number of lines greater than 35);
+			fr.close();
+		}
+		}
+		
+		
